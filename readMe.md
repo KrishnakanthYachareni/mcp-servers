@@ -1,3 +1,6 @@
+# MCP 🚀
+![MCP Tool Call Demo](/static/mcp-tool-call.gif)
+
 ## MCP (Model Context Protocol)
 
 **What it's not:**
@@ -48,8 +51,13 @@ Example:
 ### Reasons **not** to make an MCP server
 1. If it's only for us, then we could just make tools the @function_tool decorator can make any function into a tool. (If we use MCP it should be broader usage and sharing tool)
 
-### Check out the trace
+### References
+1. https://modelcontextprotocol.io/introduction
+2. https://docs.cursor.com/context/model-context-protocol
+3. https://github.com/modelcontextprotocol/quickstart-resources
 
+
+### Check out the trace
 https://platform.openai.com/traces
 
 ### Now take a look at some MCP marketplaces
@@ -64,3 +72,60 @@ https://huggingface.co/blog/LLMhacker/top-11-essential-mcp-libraries
 
 HuggingFace great community article:
 https://huggingface.co/blog/Kseniase/mcp
+
+
+The Model Context Protocol (MCP) helps connect AI-agentic applications powered by Large Language Models (LLMs) to external tools and data sources, enabling more capable and context-aware AI systems.
+
+
+## How it Works 🤔
+
+This repository uses a unique branch-based structure for learning:
+
+1.  **Each `project/*` branch covers a specific MCP feature or concept.**
+2.  **Within each branch, commits are ordered chronologically.** Follow the commits one by one to learn the topic step-by-step.
+
+Simply check out the branch for the topic you want to learn and walk through the commits!
+
+## Available Topics (Branches) 📚
+
+Here are the topics currently available:
+
+*   `project/sse`: Learn how to implement Server-Sent Events (SSE) with MCP.
+*   `project/langchain-mcp-adapters`: Explore integrating MCP with LangChain adapters.
+*   `project/docker-mcp`: Understand how to containerize your MCP applications using Docker.
+
+*More topics might be added, so keep an eye out!*
+
+## Prerequisites 🛠️
+
+Before you start, make sure you have the following installed:
+
+*   🐍 Python (version 3.10 or higher)
+*   📦 `uv` (the fast Python package installer and resolver)
+*   ✨ Cursor IDE
+*   ☁️ Claude Desktop
+
+## Getting Started ▶️
+
+1.  **Clone the repository:**
+    ```bash
+    git clone <>
+    cd mcp-crash-course
+    ```
+2.  **Choose a topic and check out the branch:**
+    ```bash
+    # Example for the SSE topic
+    git checkout project/sse
+    ```
+3.  **Follow the commits:** Use `git log --oneline --reverse` to see the chronological list of commits for the branch. Then, use `git checkout <commit_hash>` or your Git client to step through the history and learn.
+
+## Contributing 🤝
+
+Contributions are welcome! If you'd like to add a new topic or improve an existing one:
+
+1.  Fork the repository.
+2.  Create a new branch for your feature following the naming convention: `project/your-mcp-feature-name`.
+3.  Make your changes, ensuring each commit represents a logical step in the learning process.
+4.  Open a Pull Request against the `main` branch.
+
+
